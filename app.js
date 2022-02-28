@@ -25,10 +25,10 @@ app.use('/patient', patients);
 
 
 // connecting to local database
-const dbUrl = "mongodb://localhost:27017/hospital-api";
-connectDB(dbUrl);
+// const dbUrl = "mongodb://localhost:27017/hospital-api";
+// connectDB(dbUrl);
 
-// connectDB(process.env.MONGO_URI);  // connects to database specified in .env file
+connectDB(process.env.MONGO_URI);  // connects to database specified in .env file
 
 // port number
 const port = process.env.PORT || 4000;
